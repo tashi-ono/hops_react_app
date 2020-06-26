@@ -31,15 +31,15 @@ Here is a [link](http://api.brewerydb.com/v2/hops/?key=24151686766657a8e26383e3c
 
 Wireframes
 
-- [Mobile-1](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Android_Mobile_1_k1wznu.png)
-- [Mobile-2](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187674/Hops%20React%20Assets/Android_Mobile_2_xi4kaa.png)
-- [Mobile-3](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Android_Mobile_3_rdory8.png)
-- [Mobile-4](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Android_Mobile_4_q50ng3.png)
-- [Tablet/Desktop-1](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Tablet-Desktop_-_1_kmmefy.png)
-- [Tablet/Desktop-2](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Tablet-Desktop_2_cga2ez.png)
-- [Tablet/Desktop-3](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Tablet-Desktop_3_d9onkt.png)
+- [Mobile-1](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Hops%20App%20Wireframes/Android_Mobile_1_k1wznu.png)
+- [Mobile-2](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187674/Hops%20React%20Assets/Hops%20App%20Wireframes/Android_Mobile_2_xi4kaa.png)
+- [Mobile-3](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Hops%20App%20Wireframes/Android_Mobile_3_rdory8.png)
+- [Mobile-4](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Hops%20App%20Wireframes/Android_Mobile_4_q50ng3.png)
+- [Tablet/Desktop-1](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Hops%20App%20Wireframes/Tablet-Desktop_-_1_kmmefy.png)
+- [Tablet/Desktop-2](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Hops%20App%20Wireframes/Tablet-Desktop_2_cga2ez.png)
+- [Tablet/Desktop-3](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Hops%20App%20Wireframes/Tablet-Desktop_3_d9onkt.png)
 
-- [React Architecture](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593190831/Hops%20React%20Assets/Hops-Components-Diagram_jy2r2g.png)
+- [React Architecture](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593190831/Hops%20React%20Assets/Hops%20App%20Wireframes/Hops-Components-Diagram_jy2r2g.png)
 
 ### MVP/PostMVP - 5min
 

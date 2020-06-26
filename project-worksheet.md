@@ -10,7 +10,7 @@
 
 ## Project Description
 
-My project will be a react app for hop varieties, using a mobile-first approach. The user will get a full list of hops to scroll through, but will be able to search through the hops by name. I hope to implement the ability to filter out by country of origin, alpha acid level, or if they are an aroma, bitterness, or noble variety.
+My project will be a react app for hop varieties, using a mobile-first approach. The user will get a full list of hops to scroll through, but will be able to search through the hops by name and filter by country of origin and alpha acid level.
 
 ## API
 

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tashi-ono/seir_526_hops_react_app/static/css/main.5f361e03.chunk.css",
+    "main.js": "/tashi-ono/seir_526_hops_react_app/static/js/main.b715b51f.chunk.js",
+    "main.js.map": "/tashi-ono/seir_526_hops_react_app/static/js/main.b715b51f.chunk.js.map",
+    "runtime-main.js": "/tashi-ono/seir_526_hops_react_app/static/js/runtime-main.b63eb8a1.js",
+    "runtime-main.js.map": "/tashi-ono/seir_526_hops_react_app/static/js/runtime-main.b63eb8a1.js.map",
+    "static/js/2.0ae7b333.chunk.js": "/tashi-ono/seir_526_hops_react_app/static/js/2.0ae7b333.chunk.js",
+    "static/js/2.0ae7b333.chunk.js.map": "/tashi-ono/seir_526_hops_react_app/static/js/2.0ae7b333.chunk.js.map",
+    "index.html": "/tashi-ono/seir_526_hops_react_app/index.html",
+    "precache-manifest.9208d0f215ad3c5c88527c0df00cdf9c.js": "/tashi-ono/seir_526_hops_react_app/precache-manifest.9208d0f215ad3c5c88527c0df00cdf9c.js",
+    "service-worker.js": "/tashi-ono/seir_526_hops_react_app/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/tashi-ono/seir_526_hops_react_app/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.0ae7b333.chunk.js.LICENSE.txt": "/tashi-ono/seir_526_hops_react_app/static/js/2.0ae7b333.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/tashi-ono/seir_526_hops_react_app/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b63eb8a1.js",
+    "static/js/2.0ae7b333.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.b715b51f.chunk.js"
+  ]
+}

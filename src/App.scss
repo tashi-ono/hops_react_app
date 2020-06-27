@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-bar p {
+    display: none;
+  }
+}

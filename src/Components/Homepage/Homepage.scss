@@ -6,6 +6,17 @@
   height: 300px;
 }
 
+.homepage-header-text {
+  padding: 5px 3vw;
+  float: left;
+  color: white;
+  text-align: left;
+  background-color: rgba($color: #3385ab, $alpha: 0.68);
+  margin: 100px 0 2px 20vw;
+  max-width: 50vw;
+  border-radius: 10px 30px;
+}
+
 @media only screen and (min-width: 768px) {
   .homepage-pic {
     background-position-y: -100px;

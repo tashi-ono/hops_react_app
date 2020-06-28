@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(54, 156, 193);
+  background-color: rgba(54, 156, 193, 0.9);
   min-height: 4rem;
   padding: 0 30px;
   position: fixed;
@@ -19,12 +19,29 @@
   color: white;
   padding-right: 5rem;
 }
-
+.hop-cone-img {
+  padding-right: 10px;
+}
 .hamburger-lines {
   width: 30px;
   height: 3px;
   background-color: white;
   margin: 5px 0;
+}
+.hidden-beer-icon {
+  padding-left: 10px;
+}
+.hidden-beer-quote {
+  color: white;
+  padding: 0 10px;
+  visibility: hidden;
+}
+
+.hidden-beer-quote.visible {
+  visibility: visible;
+}
+.hidden-beer-quote h5 {
+  font-style: italic;
 }
 
 @media only screen and (min-width: 768px) {
@@ -32,6 +49,9 @@
     display: none;
   }
   .hidden-beer-icon {
+    display: none;
+  }
+  .hidden-beer-quote {
     display: none;
   }
 }

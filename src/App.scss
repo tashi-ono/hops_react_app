@@ -1,4 +1,8 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;400&family=Spinnaker&display=swap');
+
 .App {
+   font-family: "Spinnaker", sans-serif;
   text-align: center;
   position: relative;
   min-height: 100vh;

@@ -11,7 +11,9 @@ import HopList from "./Components/HopList/HopList";
 import HopDetails from "./Components/HopDetails/HopDetails";
 import Footer from "./Components/Footer/Footer";
 import { HopsProvider } from "./Components/HopContext/HopContext";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
+
 
 function App() {
   return (

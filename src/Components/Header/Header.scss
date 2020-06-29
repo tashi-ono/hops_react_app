@@ -6,18 +6,21 @@
   min-height: 4rem;
   padding: 0 30px;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
 }
 
 .nav-bar p {
+  font-family: "Spinnaker";
+  font-size: 1.1rem;
+  margin: 0 auto;
   padding: 0 15px;
   min-width: 5rem;
 }
 
 .nav-bar h2 {
   color: white;
-  padding-right: 5rem;
+  padding: 0 3rem 0 1rem;
 }
 .hop-cone-img {
   padding-right: 10px;
@@ -42,6 +45,7 @@
 }
 .hidden-beer-quote h5 {
   font-style: italic;
+  font-size: 1rem; 
 }
 
 @media only screen and (min-width: 768px) {

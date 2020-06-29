@@ -1,10 +1,10 @@
 import React, { useState, useEffect, createContext } from "react";
 
-export const HopContext = createContext();
-const hopsDataUrl =
-  "http://api.brewerydb.com/v2/hops/?key=24151686766657a8e26383e3c63f9faa";
+export const DataContext = createContext();
+const myApiKey = "24151686766657a8e26383e3c63f9faa";
+const hopsDataUrl = `https://cors-anywhere.herokuapp.com/https://sandbox-api.brewerydb.com/v2/hops/?key=${myApiKey}`
 
-export const HopsProvider = (props) => {
+export const DataProvider = (props) => {
   const [allHopsData, setAllHopsData] = useState([]);
 
   useEffect(() => {
@@ -18,8 +18,8 @@ export const HopsProvider = (props) => {
   }, []);
 
   return (
-    <HopContext.Provider value={[allHopsData, setAllHopsData]}>
+    <DataContext.Provider value={[allHopsData, setAllHopsData]}>
       {props.children}
-    </HopContext.Provider>
+    </DataContext.Provider>
   );
 };

@@ -10,7 +10,7 @@ import Homepage from "./Components/Homepage/Homepage";
 import HopList from "./Components/HopList/HopList";
 import HopDetails from "./Components/HopDetails/HopDetails";
 import Footer from "./Components/Footer/Footer";
-import { HopsProvider } from "./Components/HopContext/HopContext";
+import { DataProvider } from "./Components/DataContext/DataContext";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 
@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <HopsProvider>
+        <DataProvider>
           <Header />
           <Switch>
             <Route exact path="/" component={Homepage} />
@@ -28,7 +28,7 @@ function App() {
             <Redirect to="/" />
           </Switch>
           <Footer />
-        </HopsProvider>
+        </DataProvider>
       </div>
     </Router>
   );

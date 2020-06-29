@@ -8,12 +8,22 @@ const style = {
 };
 
 const Header = () => {
-  const [quoteClass, setQuoteClass] = useState("");
+  const [toggleQuoteClass, setToggleQuoteClass] = useState("");
+  const [toggleNavClass, setToggleNavClass] = useState("hidden");
 
   const handleBeerClick = (event) => {
     console.log("handle icon click");
-    setQuoteClass("visible");
+    setToggleQuoteClass("visible");
   };
+
+  const handleHamburgerOnClick = (event) => {
+    console.log("hamburger click")
+    setToggleNavClass("slide-out");
+  }
+
+  //  const handleNavClick = (event) => {
+  //   setToggleNavClass("hidden");
+  // }
 
   return (
     <nav className="nav-bar">
@@ -25,11 +35,15 @@ const Header = () => {
           width="50px"
         />
       </Link>
-      <div className="hamburger-nav">
+      <div onClick={handleHamburgerOnClick}  className={`hamburger-nav ${toggleNavClass}`} >
         <div className="hamburger-lines"></div>
         <div className="hamburger-lines"></div>
         <div className="hamburger-lines"></div>
       </div>
+      {/* <button onClick={handleNavClick} className="close-nav" >
+         X
+      </button> */}
+
       <div className="hidden-beer-icon">
         <img
           src="https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593237086/Hops%20React%20Assets/beer-icon_vqoyng.png"
@@ -38,28 +52,27 @@ const Header = () => {
           onClick={handleBeerClick}
         />
       </div>
-      <div className={`hidden-beer-quote ${quoteClass}`}>
-        <h5>Beer Makes Me Hoppy</h5>
+      <div className={`hidden-beer-quote ${toggleQuoteClass}`}>
+        <h5>Beer Makes Us Hoppy</h5>
       </div>
-      <Link style={style} to="/all-hops">
+      <Link style={style} to="/">
         <p>All Hops</p>
       </Link>
       <Link style={style} to="/us-hops">
         <p>US Varieties</p>
-      </Link>
-      <Link style={style} to="/german-hops">
+       </Link>
+      {/*<Link style={style} to="/german-hops">
         <p>German Varieties</p>
       </Link>
       <Link style={style} to="/uk-hops">
         <p>UK Varieties</p>
-      </Link>
+      </Link> */}
       <Link style={style} to="/other-hops">
         <p>Other Varieties</p>
       </Link>
-
-      <Link style={style} to="/aa-sort">
+      {/* <Link style={style} to="/aa-sort">
         <p>Alpha Acid Sort</p>
-      </Link>
+      </Link> */}
       <h2>HOPickin</h2>
     </nav>
   );

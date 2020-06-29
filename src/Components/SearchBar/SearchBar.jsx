@@ -1,30 +1,34 @@
-import React from "react";
-// import Navbar from 'react-bootstrap/Navbar'
-// import Form from 'react-bootstrap/Form'
-// import FormControl from 'react-bootstrap/Form'
-// import Button from 'react-bootstrap/Button'
+import React, { useState } from "react";
 import "./SearchBar.scss";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
+   const [hopInput, setHopInput] = useState("");
+
+// this takes input from UI search bar
+    const handleChange = (event) =>{
+      const userInput = event.target.value;
+      setHopInput(userInput);
+    }
+  
+  // this takes searchbar input and turns it into a string for use as a homepage prop
+    const handleSubmit=(event)=>{
+        event.preventDefault();
+    props.onSubmitHomepage(hopInput);
+        setHopInput("");
+    }
+
 
   const style = {
   backgroundColor: "rgba(54, 156, 193, 0.4)",
   }
   return (
     
-    <nav class="navbar navbar-light" style={style}>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+    <nav className="navbar navbar-light" style={style}>
+      <form onSubmit={handleSubmit} className="form-inline">
+        <input onChange={handleChange} value={hopInput} className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button  className="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
       </form>
     </nav>
-   
-  // <Navbar bg="light" variant="light">
-  //   <Form inline>
-  //     <FormControl type="search" placeholder="Search" className="form-control mr-sm-2"/>
-  //     <Button variant="btn btn-outline-info">Search</Button>
-  //   </Form>
-  // </Navbar>
 
   )
 };

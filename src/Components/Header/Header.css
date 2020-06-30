@@ -1,0 +1,84 @@
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(54, 156, 193, 0.9);
+  min-height: 4rem;
+  padding: 0 30px;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.nav-bar p {
+  font-family: "Spinnaker", sans-serif;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  padding: 0 15px;
+  min-width: 5rem;
+}
+
+.nav-bar h2 {
+  color: white;
+  padding: 0 3rem 0 1rem;
+}
+
+.hop-cone-img {
+  padding-right: 10px;
+}
+
+.hamburger-lines {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.hidden-beer-icon {
+  padding-left: 10px;
+}
+
+.hidden-beer-quote {
+  color: white;
+  padding: 0 10px;
+  visibility: hidden;
+}
+
+.hidden-beer-quote.visible {
+  visibility: visible;
+}
+
+.hidden-beer-quote h5 {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .hamburger-nav {
+    display: none;
+  }
+  .hidden-beer-icon {
+    display: none;
+  }
+  .hidden-beer-quote {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .nav-bar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav-bar p {
+    padding: 0 40px;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

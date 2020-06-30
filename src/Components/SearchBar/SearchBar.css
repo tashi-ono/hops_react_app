@@ -1,0 +1,13 @@
+.navbar-light {
+  width: 80vw;
+  max-width: 600px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  background-color: black;
+}
+
+.form-inline {
+  margin: 0 auto;
+  padding: 10px;
+}
+/*# sourceMappingURL=SearchBar.css.map */

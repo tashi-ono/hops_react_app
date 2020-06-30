@@ -1,0 +1,15 @@
+footer {
+  background-color: #369cc1;
+  bottom: 0;
+  width: 100%;
+  min-height: 4.5rem;
+  padding: 10px;
+  position: fixed;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: white;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=Footer.css.map */

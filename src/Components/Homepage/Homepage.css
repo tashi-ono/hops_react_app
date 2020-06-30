@@ -1,0 +1,51 @@
+.homepage-pic {
+  background-image: url("https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593231209/Hops%20React%20Assets/andre-klimke-hops_ftyipi.jpg");
+  background-size: cover;
+  background-position-y: -50px;
+  background-repeat: no-repeat;
+  height: 330px;
+}
+
+.homepage-header-text {
+  padding: 20px 3vw;
+  float: left;
+  color: white;
+  text-align: left;
+  background-color: rgba(51, 133, 171, 0.68);
+  margin: 110px 0 2px 10vw;
+  max-width: 50vw;
+  min-width: 250px;
+  border-radius: 10px 30px;
+}
+
+.homepage-header-text h1 {
+  font-size: 3rem;
+}
+
+.homepage-header-text h2 {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .homepage-pic {
+    background-position-y: -100px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .homepage-pic {
+    background-position-y: -300px;
+  }
+  .hop-list-container {
+    margin: 0 auto;
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .hop-list-container {
+    margin: 0 auto;
+    width: 80vw;
+  }
+}
+/*# sourceMappingURL=Homepage.css.map */

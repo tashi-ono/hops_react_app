@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,MAAM,EAAE,SAAS;EACjB,SAAS,EAAE,GAAG;EACd,UAAU,EAAE,KAAK;CAClB;;AAED,AAAA,YAAY,CAAC,CAAC,CAAA;EACZ,WAAW,EAAE,kBAAkB;CAChC",
+    "sources": [
+        "HopDetails.scss"
+    ],
+    "names": [],
+    "file": "HopDetails.css"
+}

@@ -7,33 +7,52 @@ export const USList = () => {
   const [allHopsData] = useContext(DataContext);
   console.log(allHopsData);
 
-  //   let displayHopsList = <h4>Loading...</h4>;
+  let displayUsHops = <h4>Loading...</h4>;
 
-  //   displayHopsList = allHopsData.filter(
-  //     (eachHops) => eachHops.countryOfOrigin === "US"
-  //   );
-  //   if (displayHopsList) {
-  //     return allHopsData.map((hops) => {
-  //       return (
-  //         <Link key={hops.id} to={`/hops/${hops.id}`}>
-  //           <p className="hop-name">{hops.name}</p>
-  //         </Link>
-  //       );
-  //     });
-  //   }
+  let foundUsHops = allHopsData.filter(
+    (eachHops) => eachHops.countryOfOrigin === "US"
+  );
+
+  if (foundUsHops) {
+    displayUsHops = foundUsHops.map((hops) => {
+      return (
+        <Link key={hops.id} to={`/hops/${hops.id}`}>
+          <p className="hop-name">{hops.name}</p>
+        </Link>
+      );
+    });
+  }
   return (
     <div className="sorted-list-container">
-      <h2>US Varieties</h2>
-      {/* {displayHopsList} */}
+      <h3>US Varieties</h3>
+      {displayUsHops}
     </div>
   );
 };
 
 export const OtherList = () => {
+  const [allHopsData] = useContext(DataContext);
+  console.log(allHopsData);
+
+  let displayOtherHops = <h4>Loading...</h4>;
+
+  let foundOtherHops = allHopsData.filter(
+    (eachHops) => eachHops.countryOfOrigin !== "US"
+  );
+
+  if (foundOtherHops) {
+    displayOtherHops = foundOtherHops.map((hops) => {
+      return (
+        <Link key={hops.id} to={`/hops/${hops.id}`}>
+          <p className="hop-name">{hops.name}</p>
+        </Link>
+      );
+    });
+  }
   return (
     <div className="sorted-list-container">
-      <h2>Other Varieties</h2>
-      {/* {displayHopsList} */}
+      <h3>Other Varieties</h3>
+      {displayOtherHops}
     </div>
   );
 };

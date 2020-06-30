@@ -17,16 +17,16 @@ const Header = () => {
   };
 
   const handleHamburgerOnClick = (event) => {
-    console.log("hamburger click")
+    console.log("hamburger click");
     setToggleNavClass("slide-out");
-  }
+  };
 
   //  const handleNavClick = (event) => {
   //   setToggleNavClass("hidden");
   // }
 
   return (
-    <nav className="nav-bar">
+    <nav className="header-nav-bar">
       <Link to="/">
         <img
           className="hop-cone-img"
@@ -35,7 +35,10 @@ const Header = () => {
           width="50px"
         />
       </Link>
-      <div onClick={handleHamburgerOnClick}  className={`hamburger-nav ${toggleNavClass}`} >
+      <div
+        onClick={handleHamburgerOnClick}
+        className={`hamburger-nav ${toggleNavClass}`}
+      >
         <div className="hamburger-lines"></div>
         <div className="hamburger-lines"></div>
         <div className="hamburger-lines"></div>
@@ -55,12 +58,12 @@ const Header = () => {
       <div className={`hidden-beer-quote ${toggleQuoteClass}`}>
         <h5>Beer Makes Us Hoppy</h5>
       </div>
-      <Link style={style} to="/varieties">
+      <Link style={style} to="/">
         <p>All Hops</p>
       </Link>
       <Link style={style} to="/varieties/us">
         <p>US Varieties</p>
-       </Link>
+      </Link>
       {/*<Link style={style} to="/german-hops">
         <p>German Varieties</p>
       </Link>
@@ -70,9 +73,9 @@ const Header = () => {
       <Link style={style} to="/varieties/other">
         <p>Other Varieties</p>
       </Link>
-      {/* <Link style={style} to="/aa-sort">
-        <p>Alpha Acid Sort</p>
-      </Link> */}
+      <Link style={style} to="/about">
+        <p>About</p>
+      </Link>
       <h2>HOPickin</h2>
     </nav>
   );

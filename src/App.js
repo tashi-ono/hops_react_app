@@ -8,6 +8,7 @@ import {
 import Header from "./Components/Header/Header";
 import Homepage from "./Components/Homepage/Homepage";
 import HopDetails from "./Components/HopDetails/HopDetails";
+import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
 import { USList, OtherList } from "./Components/SortedLists/SortedLists";
 import { DataProvider } from "./Components/DataContext/DataContext";
@@ -22,10 +23,10 @@ function App() {
           <Header />
           <Switch>
             <Route exact path="/" component={Homepage} />
-            <Route exact path="/" onClick={() => window.location.reload()} />
             <Route exact path="/varieties/us" component={USList} />
             <Route exact path="/varieties/other" component={OtherList} />
             <Route exact path="/hops/:id" component={HopDetails} />
+            <Route exact path="/about" component={About} />
             <Redirect to="/" />
           </Switch>
           <Footer />

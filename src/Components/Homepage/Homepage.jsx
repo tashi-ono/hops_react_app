@@ -12,7 +12,7 @@ const [filteredHops, setFilteredHops] = useState(allHopsData);
 const handleSubmitHomepage=(hopInput)=> {
   const hopName = hopInput.charAt(0).toUpperCase() + hopInput.slice(1);
   const filteredArr = allHopsData.filter((eachHops)=>
-    eachHops.name === hopName 
+    eachHops.name.includes(hopName) 
   )
 
 // this conditional sets HopList props to equal the hops in filteredArr, otherwise all hops are rendered

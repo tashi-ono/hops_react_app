@@ -55,10 +55,10 @@ const Header = () => {
       <div className={`hidden-beer-quote ${toggleQuoteClass}`}>
         <h5>Beer Makes Us Hoppy</h5>
       </div>
-      <Link style={style} to="/">
+      <Link style={style} to="/varieties">
         <p>All Hops</p>
       </Link>
-      <Link style={style} to="/us-hops">
+      <Link style={style} to="/varieties/us">
         <p>US Varieties</p>
        </Link>
       {/*<Link style={style} to="/german-hops">
@@ -67,7 +67,7 @@ const Header = () => {
       <Link style={style} to="/uk-hops">
         <p>UK Varieties</p>
       </Link> */}
-      <Link style={style} to="/other-hops">
+      <Link style={style} to="/varieties/other">
         <p>Other Varieties</p>
       </Link>
       {/* <Link style={style} to="/aa-sort">

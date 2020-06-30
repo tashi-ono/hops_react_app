@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { DataContext } from "../DataContext/DataContext";
 import "./SearchBar.scss";
 
 const SearchBar = (props) => {
+  const [allHopsData] = useState(DataContext);
    const [hopInput, setHopInput] = useState("");
+   const [inputResultArr, setInputResultArr] = useState([]);
 
 // this takes input from UI search bar
     const handleChange = (event) =>{
       const userInput = event.target.value;
       setHopInput(userInput);
     }
+
   
   // this takes searchbar input and turns it into a string for use as a homepage prop
     const handleSubmit=(event)=>{

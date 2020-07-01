@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -9,6 +9,7 @@ import Header from "./Components/Header/Header";
 import Homepage from "./Components/Homepage/Homepage";
 import HopDetails from "./Components/HopDetails/HopDetails";
 import About from "./Components/About/About";
+import SlideMenu from "./Components/SlideMenu/SlideMenu";
 import Footer from "./Components/Footer/Footer";
 import { USList, OtherList } from "./Components/SortedLists/SortedLists";
 import { DataProvider } from "./Components/DataContext/DataContext";
@@ -16,11 +17,26 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 
 function App() {
+  const [slideMenuOpen, setSlideMenuOpen] = useState(false);
+
+  const handleSlideMenu = () => {
+    setSlideMenuOpen(!slideMenuOpen);
+  };
+  const handleCloseMenu = () => {
+    setSlideMenuOpen(false);
+  };
+
+  let showSlideMenu = null;
+  if (slideMenuOpen) {
+    showSlideMenu = <SlideMenu handleCloseMenu={handleCloseMenu} />;
+  }
+
   return (
     <Router>
       <div className="App">
         <DataProvider>
-          <Header />
+          <Header handleSlideMenu={handleSlideMenu} />
+          {showSlideMenu}
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route exact path="/varieties/us" component={USList} />

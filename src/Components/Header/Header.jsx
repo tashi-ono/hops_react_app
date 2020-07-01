@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import HamburgerButton from "../SlideMenu/HamburgerButton";
 import "./Header.scss";
 
 const style = {
@@ -7,23 +8,13 @@ const style = {
   color: "white",
 };
 
-const Header = () => {
+const Header = (props) => {
   const [toggleQuoteClass, setToggleQuoteClass] = useState("");
-  const [toggleNavClass, setToggleNavClass] = useState("hidden");
 
   const handleBeerClick = (event) => {
     console.log("handle icon click");
     setToggleQuoteClass("visible");
   };
-
-  const handleHamburgerOnClick = (event) => {
-    console.log("hamburger click");
-    setToggleNavClass("slide-out");
-  };
-
-  //  const handleNavClick = (event) => {
-  //   setToggleNavClass("hidden");
-  // }
 
   return (
     <nav className="header-nav-bar">
@@ -35,17 +26,7 @@ const Header = () => {
           width="50px"
         />
       </Link>
-      <div
-        onClick={handleHamburgerOnClick}
-        className={`hamburger-nav ${toggleNavClass}`}
-      >
-        <div className="hamburger-lines"></div>
-        <div className="hamburger-lines"></div>
-        <div className="hamburger-lines"></div>
-      </div>
-      {/* <button onClick={handleNavClick} className="close-nav" >
-         X
-      </button> */}
+      <HamburgerButton clickHandler={props.handleSlideMenu} />
 
       <div className="hidden-beer-icon">
         <img
@@ -64,12 +45,6 @@ const Header = () => {
       <Link style={style} to="/varieties/us">
         <p>US Varieties</p>
       </Link>
-      {/*<Link style={style} to="/german-hops">
-        <p>German Varieties</p>
-      </Link>
-      <Link style={style} to="/uk-hops">
-        <p>UK Varieties</p>
-      </Link> */}
       <Link style={style} to="/varieties/other">
         <p>Other Varieties</p>
       </Link>

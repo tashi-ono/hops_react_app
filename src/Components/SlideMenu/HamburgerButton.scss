@@ -1,0 +1,28 @@
+.hamburger-nav {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: transparent;
+  border: none;
+}
+
+.hamburger-nav:hover {
+  background-color: rgb(26, 106, 131);
+  transition: 200ms ease-in-out;
+}
+
+.hamburger-lines {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.hamburger-nav.slide-out {
+  background-color: grey;
+}
+
+@media only screen and (min-width: 768px) {
+  .hamburger-nav {
+    display: none;
+  }
+}

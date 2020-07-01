@@ -23,16 +23,11 @@
   padding: 0 3rem 0 1rem;
 }
 .hop-cone-img {
-  padding-right: 10px;
+  padding-right: 5px;
 }
-.hamburger-lines {
-  width: 30px;
-  height: 3px;
-  background-color: white;
-  margin: 5px 0;
-}
+
 .hidden-beer-icon {
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .hidden-beer-quote {
   color: white;
@@ -48,10 +43,28 @@
   font-size: 1rem;
 }
 
-@media only screen and (min-width: 768px) {
-  .hamburger-nav {
-    display: none;
+.header-nav-bar img:hover,
+.header-nav-bar p:hover {
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 100ms;
+}
+
+.header-nav-bar p:hover {
+  box-shadow: 2px 2px;
+}
+
+@media only screen and (max-width: 400px) {
+  .header-nav-bar {
+    padding: 0;
   }
+
+  .header-nav-bar h2 {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .hidden-beer-icon {
     display: none;
   }

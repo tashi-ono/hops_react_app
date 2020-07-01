@@ -5,7 +5,6 @@ import "./SortedLists.scss";
 
 export const USList = () => {
   const [allHopsData] = useContext(DataContext);
-  console.log(allHopsData);
 
   let displayUsHops = <h4>Loading...</h4>;
 

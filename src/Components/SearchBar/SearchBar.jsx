@@ -20,6 +20,7 @@ const SearchBar = (props) => {
   const style = {
     backgroundColor: "rgba(54, 156, 193, 0.4)",
   };
+
   return (
     <nav className="navbar navbar-light" style={style}>
       <form onSubmit={handleSubmit} className="form-inline">

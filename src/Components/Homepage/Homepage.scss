@@ -1,3 +1,8 @@
+.homepage-container {
+  margin: 0 auto;
+  height: 100%;
+}
+
 .homepage-pic {
   background-image: url("https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593231209/Hops%20React%20Assets/andre-klimke-hops_ftyipi.jpg");
   background-size: cover;
@@ -19,7 +24,6 @@
 }
 .homepage-header-text h1 {
   font-size: 3rem;
-
 }
 
 .homepage-header-text h2 {

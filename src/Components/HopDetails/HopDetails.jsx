@@ -7,10 +7,11 @@ const HopDetails = (props) => {
   const [country, setCountry] = useState("n/a");
 
   const makeApiCall = async () => {
-    // const myApiKey = "24151686766657a8e26383e3c63f9faa";
     const myApiKey = process.env.REACT_APP_API_KEY;
-    // const singleHopUrl = `https://cors-anywhere.herokuapp.com/https://sandbox-api.brewerydb.com/v2/hop/${props.match.params.id}/?key=${myApiKey}`;
-    const singleHopUrl = `https://sandbox-api.brewerydb.com/v2/hop/${props.match.params.id}/?key=${myApiKey}`;
+    const singleHopUrl = `https://cors-anywhere.herokuapp.com/https://sandbox-api.brewerydb.com/v2/hop/${props.match.params.id}/?key=${myApiKey}`;
+
+    //backup fetch call
+    // const singleHopUrl = `https://sandbox-api.brewerydb.com/v2/hop/${props.match.params.id}/?key=${myApiKey}`;
     const res = await fetch(singleHopUrl);
     const json = await res.json();
     setHopDetails(json.data);

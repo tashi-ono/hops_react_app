@@ -1,0 +1,32 @@
+.slide-nav-container {
+  width: 80vw;
+  height: 100vh;
+  background-color: rgba(54, 156, 193, 0.95);
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  padding: 40px 50px;
+  text-align: left;
+  z-index: 1;
+  border-radius: 0 30px 30px 0;
+}
+.close-button {
+  border-radius: 30px;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  float: right;
+}
+.close-button:hover {
+  background-color: rgb(26, 106, 131);
+  transition: 200ms ease-in-out;
+}
+
+.slide-nav-container p {
+  font-size: 1.6rem;
+  width: 200px;
+}
+
+.slide-nav-container p:hover {
+  box-shadow: 2px 2px;
+}

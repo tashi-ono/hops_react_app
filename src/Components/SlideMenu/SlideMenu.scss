@@ -1,13 +1,13 @@
 .slide-nav-container {
   width: 80vw;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(54, 156, 193, 0.95);
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
-  position: absolute;
+  position: fixed;
   top: 0;
   padding: 40px 50px;
   text-align: left;
-  z-index: 1;
+  z-index: 2;
   border-radius: 0 30px 30px 0;
 }
 .close-button {

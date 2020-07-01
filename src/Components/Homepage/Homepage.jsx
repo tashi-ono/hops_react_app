@@ -21,7 +21,7 @@ const Homepage = () => {
       ? setFilteredHops(filteredArr)
       : setFilteredHops(allHopsData);
     setFilteredHops(filteredArr);
-    console.log("filteredArr", filteredArr);
+    // console.log("filteredArr", filteredArr);
   };
 
   return (

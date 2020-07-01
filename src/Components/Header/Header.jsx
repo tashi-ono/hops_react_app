@@ -9,12 +9,12 @@ const style = {
 };
 
 const Header = (props) => {
-  const [toggleQuoteClass, setToggleQuoteClass] = useState("");
+  const [beerQuote, setBeerQuote] = useState(false);
 
   const handleBeerClick = (event) => {
-    console.log("handle icon click");
-    setToggleQuoteClass("visible");
+  setBeerQuote(!beerQuote)
   };
+
 
   return (
     <nav className="header-nav-bar">
@@ -36,10 +36,10 @@ const Header = (props) => {
           onClick={handleBeerClick}
         />
       </div>
-      <div className={`hidden-beer-quote ${toggleQuoteClass}`}>
+      <div className={`hidden-beer-quote ${beerQuote? "visible" : ""}`}>
         <h5>Beer Makes Us Hoppy</h5>
       </div>
-      <Link style={style} to="/">
+      <Link style={style} to="/varieties">
         <p>All Hops</p>
       </Link>
       <Link style={style} to="/varieties/us">

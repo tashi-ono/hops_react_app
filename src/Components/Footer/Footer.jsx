@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <p>&copy; Copyright 2020 N.S. Coen</p>
       <p>
-        Hops icon by Icons8 | Hop background by Andre Klimke | Courtesy of
+        Icons by Icons8 | Hop background by Andre Klimke | Courtesy of
         UnSplash
       </p>
     </footer>

@@ -38,13 +38,18 @@ function App() {
           <Header handleSlideMenu={handleSlideMenu} />
           {showSlideMenu}
           <Switch>
-            {/* <Route exact path="/" component={Homepage} /> */}
-            <Route exact path="/" render={(routerProps)=>(<Homepage handleCloseMenu={handleCloseMenu} />) }/>
+            <Route
+              exact
+              path="/"
+              render={(routerProps) => (
+                <Homepage handleCloseMenu={handleCloseMenu} />
+              )}
+            />
             <Route exact path="/varieties/us" component={USList} />
             <Route exact path="/varieties/other" component={OtherList} />
             <Route exact path="/hops/:id" component={HopDetails} />
             <Route exact path="/about" component={About} />
-            <Redirect to="/" />
+            <Redirect to="/seir_526_hops_react_app" />
           </Switch>
           <Footer />
         </DataProvider>

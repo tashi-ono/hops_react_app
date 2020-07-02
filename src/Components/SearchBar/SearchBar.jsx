@@ -4,6 +4,7 @@ import "./SearchBar.scss";
 const SearchBar = (props) => {
   const [hopInput, setHopInput] = useState("");
 
+
   // this takes input from UI search bar
   const handleChange = (event) => {
     const userInput = event.target.value;

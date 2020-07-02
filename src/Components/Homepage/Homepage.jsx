@@ -8,6 +8,7 @@ const Homepage = (props) => {
   const [allHopsData] = useContext(DataContext);
   const [filteredHops, setFilteredHops] = useState(allHopsData);
 
+
   // this takes hopInput from the SearchBar component and creates a hop array that matches input
   const handleSubmitHomepage = (hopInput) => {
     const hopName = hopInput.charAt(0).toUpperCase() + hopInput.slice(1);

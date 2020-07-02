@@ -9,29 +9,34 @@
   width: 100vw;
   top: 0;
   z-index: 1;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .header-nav-bar p {
+   text-shadow: 2px 2px black;
   font-family: "Spinnaker", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
   margin: 0 auto;
   padding: 0 15px;
-  min-width: 5rem;
+  min-width: 3rem;
 }
 
 .header-nav-bar h2 {
   color: white;
+  text-shadow: 2px 2px black;
   padding: 0 3rem 0 1rem;
 }
 .hop-cone-img {
   padding-right: 5px;
+ 
 }
 
 .hidden-beer-icon {
   padding-left: 5px;
 }
 .hidden-beer-quote {
-  color: white;
+  color: rgb(251, 253, 138);
   padding: 0 10px;
   visibility: hidden;
 }

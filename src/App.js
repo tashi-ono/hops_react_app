@@ -38,7 +38,8 @@ function App() {
           <Header handleSlideMenu={handleSlideMenu} />
           {showSlideMenu}
           <Switch>
-            <Route exact path="/" component={Homepage} />
+            {/* <Route exact path="/" component={Homepage} /> */}
+            <Route exact path="/" render={(routerProps)=>(<Homepage handleCloseMenu={handleCloseMenu} />) }/>
             <Route exact path="/varieties/us" component={USList} />
             <Route exact path="/varieties/other" component={OtherList} />
             <Route exact path="/hops/:id" component={HopDetails} />

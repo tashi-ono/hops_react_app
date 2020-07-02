@@ -9,6 +9,7 @@ const Footer = () => {
         Icons by Icons8 | Hop background by Andre Klimke | Courtesy of
         UnSplash
       </p>
+      <p>Background textures by TransparentTextures</p>
     </footer>
   );
 };

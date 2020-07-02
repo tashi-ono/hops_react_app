@@ -17,6 +17,7 @@
   color: white;
   text-align: left;
   background-color: rgba($color: #3385ab, $alpha: 0.68);
+   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
   margin: 110px 0 2px 10vw;
   max-width: 50vw;
   min-width: 250px;
@@ -24,10 +25,12 @@
 }
 .homepage-header-text h1 {
   font-size: 3rem;
+  text-shadow: 2px 2px black;
 }
 
 .homepage-header-text h2 {
   font-size: 1.5rem;
+  text-shadow: 2px 2px black;
 }
 
 @media only screen and (min-width: 768px) {

@@ -18,7 +18,9 @@ const SearchBar = (props) => {
   };
 
   const style = {
-    backgroundColor: "rgba(54, 156, 193, 0.4)",
+    backgroundColor: "#01a9b4",
+    backgroundImage: "url('https://www.transparenttextures.com/patterns/bright-squares.png')",
+    border: "3px solid black",
   };
 
   return (
@@ -32,7 +34,7 @@ const SearchBar = (props) => {
           placeholder="Search"
           aria-label="Search"
         />
-        <button className="btn btn-outline-info my-2 my-sm-0" type="submit">
+        <button className="btn btn-outline-light my-2 my-sm-0" type="submit">
           Search
         </button>
       </form>

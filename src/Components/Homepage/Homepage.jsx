@@ -4,7 +4,7 @@ import HopList from "../HopList/HopList";
 import { DataContext } from "../DataContext/DataContext";
 import "./Homepage.scss";
 
-const Homepage = () => {
+const Homepage = (props) => {
   const [allHopsData] = useContext(DataContext);
   const [filteredHops, setFilteredHops] = useState(allHopsData);
 
@@ -25,7 +25,7 @@ const Homepage = () => {
   };
 
   return (
-    <div className="homepage-container">
+    <div className="homepage-container" onClick={props.handleCloseMenu}>
       <div className="homepage-pic">
         <div className="homepage-header-text">
           <h1>HOPickin</h1>

@@ -3,6 +3,7 @@
   border-radius: 20px;
   background: transparent;
   border: none;
+   
 }
 
 .hamburger-nav:hover {
@@ -15,6 +16,7 @@
   height: 3px;
   background-color: white;
   margin: 6px 0;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hamburger-nav.slide-out {

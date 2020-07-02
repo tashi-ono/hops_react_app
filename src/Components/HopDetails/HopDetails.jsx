@@ -6,19 +6,19 @@ const HopDetails = (props) => {
   const [hopDetails, setHopDetails] = useState({});
   const [country, setCountry] = useState("n/a");
 
-  const makeApiCall = async () => {
-    const myApiKey = process.env.REACT_APP_API_KEY;
-    const singleHopUrl = `https://cors-anywhere.herokuapp.com/https://sandbox-api.brewerydb.com/v2/hop/${props.match.params.id}/?key=${myApiKey}`;
-
-    //backup fetch call
-    // const singleHopUrl = `https://sandbox-api.brewerydb.com/v2/hop/${props.match.params.id}/?key=${myApiKey}`;
-    const res = await fetch(singleHopUrl);
-    const json = await res.json();
-    setHopDetails(json.data);
-    setCountry(json.data.country);
-  };
-
   useEffect(() => {
+    const makeApiCall = async () => {
+      const myApiKey = process.env.REACT_APP_API_KEY;
+      const singleHopUrl = `https://cors-anywhere.herokuapp.com/https://sandbox-api.brewerydb.com/v2/hop/${props.match.params.id}/?key=${myApiKey}`;
+
+      //backup fetch call
+      // const singleHopUrl = `https://sandbox-api.brewerydb.com/v2/hop/${props.match.params.id}/?key=${myApiKey}`;
+      const res = await fetch(singleHopUrl);
+      const json = await res.json();
+      setHopDetails(json.data);
+      setCountry(json.data.country);
+    };
+
     makeApiCall();
   }, [props]);
 

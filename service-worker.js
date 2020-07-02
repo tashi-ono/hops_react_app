@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/seir_526_hops_react_app/precache-manifest.739c2b868824bcb34b953362e802786c.js"
+  "/seir_526_hops_react_app/precache-manifest.5966bae832f7b8842225fc3beabf071d.js"
 );
 
 self.addEventListener('message', (event) => {

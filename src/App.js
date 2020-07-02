@@ -49,7 +49,7 @@ function App() {
             <Route exact path="/varieties/other" component={OtherList} />
             <Route exact path="/hops/:id" component={HopDetails} />
             <Route exact path="/about" component={About} />
-            <Redirect to="/" />
+            <Redirect to="/seir_526_hops_react_app" />
           </Switch>
           <Footer />
         </DataProvider>

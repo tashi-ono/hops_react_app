@@ -39,7 +39,7 @@ const Header = (props) => {
         <h5>Beer Makes Us Hoppy</h5>
       </div>
       <Link style={style} to="/">
-        <p onClick={() => window.location.reload(false)}>All Hops</p>
+        <p>All Hops</p>
       </Link>
       <Link style={style} to="/varieties/us">
         <p>US Varieties</p>

@@ -22,7 +22,6 @@ const Homepage = (props) => {
       ? setFilteredHops(filteredArr)
       : setFilteredHops(allHopsData);
     setFilteredHops(filteredArr);
-    // console.log("filteredArr", filteredArr);
   };
 
   return (

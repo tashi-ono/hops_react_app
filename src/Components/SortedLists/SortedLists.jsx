@@ -31,7 +31,6 @@ export const USList = () => {
 
 export const OtherList = () => {
   const [allHopsData] = useContext(DataContext);
-  // console.log(allHopsData);
 
   let displayOtherHops = <h4>Loading...</h4>;
 

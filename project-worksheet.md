@@ -1,9 +1,9 @@
 # Project Overview
 
 <img src="https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593712040/Hops%20React%20Assets/hop-app-gif_luqh35.gif" alt="hop-app-gif" width="500"/>
-<br/>
-<img src="https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593141564/Hops%20React%20Assets/panda-prize_hjskhx.gif" alt="panda"width="40"  />...panda prize for gif? 
-<!-- (see Components) -->
+<img src="https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593141564/Hops%20React%20Assets/panda-prize_hjskhx.gif" alt="panda"width="40"  />
+
+<!-- ...panda prize for gif? (see Components) -->
 
 ## Project Links
 
@@ -49,23 +49,25 @@ Wireframes
 
 | Component                      | Priority | Estimated Time | Time Allotted | Actual Time |
 | ------------------------------ | :------: | :------------: | :-----------: | :---------: |
-| Base React/HTML structure      |    H     |      5hrs      |     -hrs      |    -hrs     |
-| Bootstrap Navbar               |    M     |      2hrs      |     -hrs      |    -hrs     |
-| Set up Routes/Links            |    H     |      5hrs      |     -hrs      |    -hrs     |
-| Pull data with API             |    H     |      5hrs      |     -hrs      |    -hrs     |
-| Filter states for data sorting |    H     |      5hrs      |     -hrs      |    -hrs     |
-| Search bar onClick             |    H     |      3hrs      |     -hrs      |    -hrs     |
-| CSS/SCSS(?)                    |    M     |      5hrs      |     -hrs      |    -hrs     |
-| Responsive Design              |    M     |      5hrs      |     -hrs      |    -hrs     |
-| Total                          |    --    |     35hrs      |     -hrs      |    -hrs     |
+| Base React/HTML structure      |    H     |      5hrs      |     -hrs      |    4hrs     |
+| Bootstrap Navbar               |    M     |      2hrs      |     -hrs      |    2hrs     |
+| Routes/Links & Debugging       |    H     |      5hrs      |     -hrs      |   6.5hrs    |
+| Pull data with API             |    H     |      5hrs      |     -hrs      |    3hrs     |
+| Filter states for data sorting |    H     |      5hrs      |     -hrs      |    4hrs     |
+| Search bar onClick             |    H     |      3hrs      |     -hrs      |    4hrs     |
+| CSS/SCSS(?)                    |    M     |      5hrs      |     -hrs      |    3hrs     |
+| Responsive Design              |    M     |      5hrs      |     -hrs      |    4hrs     |
+| Deploy Website                 |    H     |      5hrs      |     -hrs      |   1.5hrs    |
+| Debugging                      |    H     |      5hrs      |     -hrs      |    8hrs     |
+| Total                          |    --    |     40hrs      |     -hrs      |    40hrs    |
 
 #### PostMVP
 
 | Component          | Priority | Estimated Time | Time Allotted | Actual Time |
 | ------------------ | :------: | :------------: | :-----------: | :---------: |
-| Button Hover       |    L     |      3hrs      |     -hrs      |    -hrs     |
-| Bootstrap Carousel |    M     |      3hrs      |     -hrs      |    -hrs     |
-| Total              |    --    |      6hrs      |     -hrs      |    -hrs     |
+| Button Hover       |    L     |      3hrs      |     1hrs      |    1hrs     |
+| Bootstrap Carousel |    M     |      3hrs      |     0hrs      |    0hrs     |
+| Total              |    --    |      6hrs      |     1hrs      |    1hrs     |
 
 <!-- ## Components
 
@@ -93,10 +95,18 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description. Code snippet should not be greater than 10 lines of code.
+I am proud of the code snippet below because I was able to use createContext to access all my data from the API without having to make another fetch call.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+
+export const DataContext = createContext();
+ export const DataProvider = (props) => {
+  const [allHopsData, setAllHopsData] = useState([]);
+...
+  return (
+    <DataContext.Provider value={[allHopsData, setAllHopsData]}>
+      {props.children}
+    </DataContext.Provider>
+  );
+};
 ```

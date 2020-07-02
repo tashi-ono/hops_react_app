@@ -1,7 +1,9 @@
 # Project Overview
 
-[Use Gifox to make gif Demo of app?](https://gifox.io/)
-<img src="https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593141564/Hops%20React%20Assets/panda-prize_hjskhx.gif" width="40"  />...panda prize? (see Components)
+<img src="https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593712040/Hops%20React%20Assets/hop-app-gif_luqh35.gif" alt="hop-app-gif" width="500"/>
+<br/>
+<img src="https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593141564/Hops%20React%20Assets/panda-prize_hjskhx.gif" alt="panda"width="40"  />...panda prize for gif? 
+<!-- (see Components) -->
 
 ## Project Links
 
@@ -10,11 +12,11 @@
 
 ## Project Description
 
-My project will be a react app for hop varieties, using a mobile-first approach. The user will get a full list of hops to scroll through, but will be able to search through the hops by name and filter by country of origin and alpha acid level.
+My project will be a react app for hop varieties, using a mobile-first approach. The app will pull in an API and the user will get a full list of hops to scroll through. The user will also be able to search through the hops by name.
 
 ## API
 
-Here is a [link](http://api.brewerydb.com/v2/hops/?key=24151686766657a8e26383e3c63f9faa) to my API from [BreweryDB](https://www.brewerydb.com/developers), and a code snippet:
+Here is a code snippet from my API at [BreweryDB](https://www.brewerydb.com/developers):
 
 ```
 
@@ -39,7 +41,7 @@ Wireframes
 - [Tablet/Desktop-2](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Hops%20App%20Wireframes/Tablet-Desktop_2_cga2ez.png)
 - [Tablet/Desktop-3](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593187675/Hops%20React%20Assets/Hops%20App%20Wireframes/Tablet-Desktop_3_d9onkt.png)
 
-- [React Architecture](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593190831/Hops%20React%20Assets/Hops%20App%20Wireframes/Hops-Components-Diagram_jy2r2g.png)
+- [React Architecture](https://res.cloudinary.com/gaseir526-tashiono/image/upload/v1593713796/Hops%20React%20Assets/Hops%20App%20Wireframes/Hops_Component_Tree_i2jmwc.png)
 
 ### MVP/PostMVP - 5min
 
@@ -65,11 +67,11 @@ Wireframes
 | Bootstrap Carousel |    M     |      3hrs      |     -hrs      |    -hrs     |
 | Total              |    --    |      6hrs      |     -hrs      |    -hrs     |
 
-## Components
+<!-- ## Components
 
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
-Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components.
+Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. -->
 
 <!-- | Component |                          Description                          |
 | --------- | :-----------------------------------------------------------: |
@@ -77,7 +79,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Header    |         This will render the header including the nav         |
 | Footer    |                  This will render the footer                  | -->
 
-Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a <strong>panda prize</strong>.
+<!-- Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a <strong>panda prize</strong>. -->
 
 <!-- | Component        | Priority | Estimated Time | Time Allotted | Actual Time |
 | ---------------- | :------: | :------------: | :-----------: | :---------: |

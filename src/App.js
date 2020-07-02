@@ -41,10 +41,9 @@ function App() {
             <Route
               exact
               path="/"
-              render={(routerProps) => (
-                <Homepage handleCloseMenu={handleCloseMenu} />
-              )}
+              render={() => <Homepage handleCloseMenu={handleCloseMenu} />}
             />
+            <Route exact path="/" component={Homepage} />
             <Route exact path="/varieties/us" component={USList} />
             <Route exact path="/varieties/other" component={OtherList} />
             <Route exact path="/hops/:id" component={HopDetails} />

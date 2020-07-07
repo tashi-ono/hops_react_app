@@ -1,5 +1,6 @@
 import React, { useState, useEffect, createContext } from "react";
 
+
 export const DataContext = createContext();
 const myApiKey = process.env.REACT_APP_API_KEY;
 const hopsDataUrl = `https://cors-anywhere.herokuapp.com/https://sandbox-api.brewerydb.com/v2/hops/?key=${myApiKey}`;
